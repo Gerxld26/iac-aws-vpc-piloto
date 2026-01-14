@@ -1,4 +1,11 @@
+
 .terraform/
 *.tfstate
 *.tfstate.backup
-.tfplan
+tfplan
+*.tfplan
+
+terraform.tfvars
+
+.vscode/
+.DS_Store
