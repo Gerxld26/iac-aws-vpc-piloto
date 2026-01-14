@@ -1,11 +1,15 @@
 
 .terraform/
-*.tfstate
-*.tfstate.backup
+terraform.tfstate
+terraform.tfstate.*
 tfplan
-*.tfplan
+
 
 terraform.tfvars
+
+
+evidencias/
+
 
 .vscode/
 .DS_Store
