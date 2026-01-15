@@ -89,11 +89,12 @@ resource "aws_security_group" "web" {
   description = "Capa web con acceso controlado"
   vpc_id      = aws_vpc.this.id
 
+
   ingress {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = [var.admin_ip_cidr]
   }
 
   ingress {
